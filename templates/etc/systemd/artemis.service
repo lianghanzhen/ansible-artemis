@@ -7,6 +7,9 @@ User={{ _service.user }}
 Group={{ _service.group }}
 ExecStart={{ _service.start }}
 ExecStop={{ _service.stop }}
+KillMode=process
+Restart=on-failure
+RestartSec=5s
 
 # Shutdown delay in seconds, before process is tried to be killed with KILL (if configured)
 TimeoutStopSec=20

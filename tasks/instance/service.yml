@@ -10,7 +10,7 @@
 
 - name: "Install {{ _service.name }} as service"
   template:
-    src: "etc/systemd/artemis.service"
+    src: "{{ artemis_templates.systemd_service }}"
     dest: "/etc/systemd/system/{{ _service.name }}.service"
     owner: "{{ _service.user }}"
     group: "{{ _service.group }}"

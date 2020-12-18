@@ -59,3 +59,12 @@ artemis_log_file: "${artemis.instance}/log/artemis.log"
 
 jolokia_cors:
   - "*://localhost*"
+
+# template variables
+artemis_templates:
+  bootstrap: "artemis/etc/bootstrap.xml"
+  broker: "artemis/etc/broker.xml"
+  jolokia_access: "artemis/etc/jolokia-access.xml"
+  logging: "artemis/etc/logging.properties"
+  systemd_service: "etc/systemd/artemis.service"
+
